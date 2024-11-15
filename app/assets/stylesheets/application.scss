@@ -11,3 +11,64 @@
 @import "components/index";
 @import "pages/index";
 @import "components/movie";
+
+// Ambiance sombre avec l'image en arrière-plan
+body {
+  background: url('https://www.haute-savoie-tourisme.org/docs/images/7354ddf8900249a0631aaf8a960874f8') no-repeat center center fixed;
+  background-size: cover;
+  color: #f0f0f0;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); // Couche sombre
+  z-index: -1;
+}
+
+// Polices et titres
+h1, h3, .navbar-brand {
+  font-family: 'Carter One', cursive;
+  color: #ff4d4d; // Rouge cinéma
+}
+
+.card {
+  background-color: rgba(50, 50, 50, 0.85); // Gris sombre translucide
+  color: #f8f9fa;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #b22222 !important; // Rouge foncé
+  border-color: #b22222 !important;
+}
+
+.btn-primary:hover {
+  background-color: #8b0000 !important; // Rouge encore plus foncé
+}
+
+.btn-secondary {
+  background-color: #6c757d !important;
+  border-color: #6c757d !important;
+}
+
+.btn-danger {
+  background-color: #d9534f !important; // Rouge doux pour le bouton supprimer
+  border-color: #d9534f !important;
+}
+
+.btn-danger:hover {
+  background-color: #c9302c !important;
+}
+
+.navbar {
+  background-color: #111 !important;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}

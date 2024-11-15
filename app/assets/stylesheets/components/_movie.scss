@@ -11,6 +11,12 @@
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .movie-poster {
@@ -118,4 +124,12 @@
 .btn-primary:hover {
   background-color: #2980B9
 }
+.btn-danger {
+  background-color: #3dc0cc !important; /* Orange foncé */
+  border-color: #3dc0cc !important;
+}
 
+.btn-danger:hover {
+  background-color: #43efff !important; /* Orange vif au survol */
+  border-color: #43efff !important;
+}
