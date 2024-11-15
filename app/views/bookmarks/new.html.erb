@@ -1,0 +1,9 @@
+<h1>Add a Bookmark to <%= @list.name %></h1>
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.association :movie, collection: Movie.all, prompt: "Choisis un film" %>
+  <%= f.input :comment, label: "Commentaire" %>
+  <%= f.button :submit, "Ajouter un signet", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to "Retour", list_path(@list), class: "btn btn-secondary" %>
